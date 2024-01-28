@@ -6,11 +6,22 @@ public class Student {
     private int age;
     private String mobNo;
 
-    public Student(int rollNo, String name, int age, String mobNo) {
+    public String grade;
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
+    public Student(int rollNo, String name, int age, String mobNo, String grade) {
         this.rollNo = rollNo;
         this.name = name;
         this.age = age;
         this.mobNo =mobNo;
+        this.grade=grade;
     }
 
     public int getRollNo() {
